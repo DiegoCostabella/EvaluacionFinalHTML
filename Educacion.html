@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
@@ -10,20 +10,21 @@
 
 <body>
 	<header>
-		<svg width="25%" viewbox="0 0 500 250">
-			<image xlink:href="Imagenes/Logo.svg" width="100%"  x="0" y="0"></image>
+		<svg id="logo" width="25%" viewbox="0 0 500 250">
+			<image xlink:href="Imagenes/Logo.svg" width="100%" height="100%" x="0" y="0"></image>
 		</svg>
 		<h1>Hoja de Vida - Educación</h1>
 		<h2><u>Diego Costabella</u></h2>
 		<nav>
-			<p>
-				<a href="Index.html">Información General</a> | <a href="Experiencia.html">Experiencia</a>
+			<p id="links">
+				<a id="linkexindex" href="Index.html">Información General</a> | 
+				<a id="linkexperiencia" href="Experiencia.html">Experiencia</a>
 			</p>
 		</nav>
 	</header>
 	<h2>Información Personal</h2>
 <hr>
-		<ul>
+		<ul id="datospersonales">
 			<li><strong>Nombre:</strong> <em>Diego Hernan.</em></li>
 			<li><strong>Apellido:</strong> <em>Costabella.</em></li>
 			<li><strong>Edad:</strong> <em>29 años.</em></li>
@@ -32,10 +33,11 @@
 		</ul>
 	<h2>Educación</h2>
 <hr>
-	<table border="1">
+	<table id="tablaestudios" border="1">
 		<thead>
 			<tr>
 				<th>Año</th>
+				<th>Estudio</th>
 				<th>Institución</th>
 				<th>Lugar</th>
 				<th>¿Culminó?</th>
@@ -43,73 +45,114 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td></td>
-				<td>Lausanne</td>
-				<td></td>
-				<td></td>
+				<td>2003</td>
+				<td>Primario</td>
+				<td> Colegio Lausanne</td>
+				<td>Avenida 9 de Julio 1760, <em>Lanús, Buenos Aires, Argentina</em></td>
+				<td align="center">SI</td>
+
 			</tr>
 			<tr>
-				<td></td>
-				<td>Palaa</td>
-				<td></td>
-				<td></td>
+				<td>2006</td>
+				<td>Secundario - Maestro mayor de obras (Construcciones)</td>
+				<td>Escuela Técnica Nº5</td>
+				<td>Juan Bautista Palaá 747, <em>Avellaneda, Buenos Aires, Argentina</em></td>
+				<td align="center">SI</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td>I.T.M.</td>
-				<td></td>
-				<td></td>
+				<td>2010</td>
+				<td>Diseño Industrial - Orientación Automotriz</td>
+				<td>Instituto Tecnológico de Motores (I.T.M.)</td>
+				<td>Aristóbulo del Valle 5125, <em>Villa Ballester, Buenos Aires, Argentina</em></td>
+				<td align="center">NO</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td>Diseño Automotriz (Dibujo)</td>
-				<td></td>
-				<td></td>
+				<td>2012</td>
+				<td>Diseño Automotriz (Dibujo a Mano Alzada)</td>
+				<td>Particular (con Prof. Dan Mattano)</td>
+				<td>Cuba 1956, <em>Ciudad Autonoma de Buenos Aires, Buenos Aires, Argentina</em></td>
+				<td align="center">SI</td>
 			</tr>
 			<tr>
-				<td></td>
+				<td>2013</td>
+				<td>Reparación de Celulares</td>
+				<td>Instituto Mas</td>
+				<td>Avenida Hipólito Yrigoyen 8992, <em>Lomas de Zamora, Buenos Aires, Argentina</em></td>
+				<td align="center">SI</td>
+			</tr>
+			<tr>
+				<td>2015</td>
 				<td>Locución</td>
-				<td></td>
-				<td></td>
+				<td>Instituto Sudamericano para la Enseñanza de la Comunicación (I.S.E.C.)</td>
+				<td>Viamonte 2020, <em>Ciudad Autonoma de Buenos Aires, Buenos Aires, Argentina</em></td>
+				<td align="center">NO</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td>Bartender</td>
-				<td></td>
-				<td></td>
+				<td>2017</td>
+				<td>Bartender Profesional</td>
+				<td>Instituto Argentino de Coctelería (I.A.C.)</td>
+				<td>Avenida de Mayo 570, <em>Ciudad Autonoma de Buenos Aires, Buenos Aires, Argentina</em></td>
+				<td align="center">SI</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td>Flair</td>
-				<td></td>
-				<td></td>
+				<td>2018</td>
+				<td>Flair Bartender</td>
+				<td>Instituto Argentino de Coctelería (I.A.C.)</td>
+				<td>Avenida de Mayo 570, <em>Ciudad Autonoma de Buenos Aires, Buenos Aires, Argentina</em></td>
+				<td align="center">CURSANDO</td>
 			</tr>
 			<tr>
-				<td></td>
+				<td>2018</td>
 				<td>Personal Trainer</td>
-				<td></td>
-				<td></td>
+				<td>Fisicoculturistas Metropolitanos Asociados (F.M.A.)</td>
+				<td>Avenida Córdoba 3358, <em>Ciudad Autonoma de Buenos Aires, Buenos Aires, Argentina</em></td>
+				<td align="center">CURSANDO</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td>Masajista</td>
-				<td></td>
-				<td></td>
+				<td>2018</td>
+				<td>Masajista Profesional - Orientación Deportiva</td>
+				<td>Instituto Superior Argentino de Belleza (I.S.A.B.)</td>
+				<td>20 de Octubre 30, <em>Lanús, Buenos Aires, Argentina</em></td>
+				<td align="center">CURSANDO</td>
 			</tr>
 			<tr>
-				<td></td>
+				<td>2018</td>
 				<td>Diseño Web</td>
-				<td></td>
-				<td></td>
+				<td>Next U</td>
+				<td>"Online", <em>Lanús, Buenos Aires, Argentina</em></td>
+				<td align="center">CURSANDO</td>
 			</tr>
 		</tbody>
 	</table>
-	<form>
-		Agregar Estudios	Año		Institución		Lugar		¿Culminó?		Enviar
+	<form id="formularioestudios" name="formularioestudios">
+		<fieldset>
+			<legend>Agregar Estudio</legend>
+			<label for="año">Año</label>
+			<input name="año" type="number" min="2006" max="2099" step="1" value="2018" required /><br>
+			<label for="estudio">Estudio</label>
+			<input name="estudio" type="text" maxlength="100" required /><br>
+			<label for="institucion">Institución</label>
+			<input name="institucion" type="text" maxlength="100" required /><br>
+			<label for="lugar">Lugar</label>
+			<textarea name="lugar" rows="3" cols="50" maxlength="150" placeholder="Escriba Aquí la Ubicación." required></textarea><br>
+				<table id="tablaformularioradiobotones">
+					<tr>
+						<td colspan="3" align="center">¿Culminó?</td>
+					</tr>
+					<tr>
+						<td><input name="culmino" type="radio" value="SI" checked required>SI</td>
+						<td><input name="culmino" type="radio" value="NO" required>NO</td>
+						<td><input name="culmino" type="radio" value="CURSANDO" required>CURSANDO</td>
+					</tr>
+				</table>
+			<input type="submit" value="Enviar">
+		</fieldset>
 	</form>
 	<footer>
-		<p>
-			<strong>Correo:</strong> <strong>DiegoCostabella@hotmail.com</strong> | <strong>Teléfono:</strong> <em>(+54) (011)</em> <strong>2336-7764</strong> | <strong>Dirección:</strong> <strong>Ministro Brin 2321</strong>, <em>Lanús, Buenos Aires, Argentina</em>.
+		<p id="contacto">
+			<strong>Correo:</strong> <strong>DiegoCostabella@hotmail.com</strong> | 
+			<strong>Teléfono:</strong> <em>(+54) (011)</em> <strong>2336-7764</strong> | 
+			<strong>Dirección:</strong> <strong>Ministro Brin 2321</strong>, <em>Lanús, Buenos Aires, Argentina</em>.
 		</p>
 	</footer>
 </body>

@@ -10,20 +10,21 @@
 
 <body>
 	<header>
-		<svg width="25%" viewbox="0 0 500 250">
-			<image xlink:href="Imagenes/Logo.svg" width="100%"  x="0" y="0"></image>
+		<svg id="logo" width="25%" viewbox="0 0 500 250">
+			<image xlink:href="Imagenes/Logo.svg" width="100%"  height="100%" x="0" y="0"></image>
 		</svg>
 		<h1>Hoja de Vida - Experiencia</h1>
 		<h2><u>Diego Costabella</u></h2>
 		<nav>
-			<p>
-				<a href="Index.html">Información General</a> | <a href="Educacion.html">Educación</a>
+			<p id="links">
+				<a href="Index.html">Información General</a> | 
+				<a href="Educacion.html">Educación</a>
 			</p>
 		</nav>
 	</header>
 	<h2>Información Personal</h2>
 <hr>
-		<ul>
+		<ul id="datospersonales">
 			<li><strong>Nombre:</strong> <em>Diego Hernan.</em></li>
 			<li><strong>Apellido:</strong> <em>Costabella.</em></li>
 			<li><strong>Edad:</strong> <em>29 años.</em></li>
@@ -31,25 +32,28 @@
 			<li><strong>Lugar de Nacimiento:</strong> <em>Avellaneda, Buenos Aires, Argentina.</em></li>
 		</ul>
 	<h2>Experiencia</h2>
-<hr>
+<br>
 	<h3>Nombre del Video</h3>
-		<video src="" controls autoplay preload="none/auto" loop poster="" width="" height=""> (45 segundos)
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-			se agrega texto por si no se repoduce el video
+		<video id="videopresentacion" src="" controls preload="auto" poster="" width="1000"> (45 segundos)
+			<source src="" type="video/.mp4">
+			<source src="" type="video/.mp4">
+			<source src="" type="video/.mp4">
+			<source src="" type="video/.mp4">
+			Tu explorador no soporta este formato
 		</video>
-		<audio src="" controls autoplay preload="none/auto" loop> (60 segundos)
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-			<source src="" type="tipo+/+extencion"  (tipo, audio o video, extencion es .mp3 .mp4 por ejemplo)>
-				se agrega texto por si no se repoduce el audio
+<br>
+		<audio id="audiopresentacion" src="" controls preload="auto"> (60 segundos)
+			<source src="" type="audio/.mp3">
+			<source src="" type="audio/.mp3">
+			<source src="" type="audio/.mp3">
+			<source src="" type="audio/.mp3">
+			Tu explorador no soporta este formato
 		</audio>
 	<footer>
-		<p>
-			<strong>Correo:</strong> <strong>DiegoCostabella@hotmail.com</strong> | <strong>Teléfono:</strong> <em>(+54) (011)</em> <strong>2336-7764</strong> | <strong>Dirección:</strong> <strong>Ministro Brin 2321</strong>, <em>Lanús, Buenos Aires, Argentina</em>.
+		<p id="contacto">
+			<strong>Correo:</strong> <strong>DiegoCostabella@hotmail.com</strong> | 
+			<strong>Teléfono:</strong> <em>(+54) (011)</em> <strong>2336-7764</strong> | 
+			<strong>Dirección:</strong> <strong>Ministro Brin 2321</strong>, <em>Lanús, Buenos Aires, Argentina</em>.
 		</p>
 	</footer>
 </body>
